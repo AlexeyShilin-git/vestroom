@@ -22,10 +22,11 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "sans-serif	",
     textShadow: "3px 3px 3px grey",
   },
-  titleS: {
+  titleLastName: {
     fontFamily: "cursive",
     fontSize: "1.5rem",
-    fontStyle: "italic"
+    fontStyle: "italic",
+    textShadow: "3px 3px 3px grey",
   },
 }));
 
@@ -45,7 +46,10 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h1" className={classes.title}>
-            Vestroom <span className={classes.titleS}>beauty studio</span>
+            Vestroom <span className={classes.titleLastName}>beauty studio</span>
+          </Typography>
+          <Typography className={classes.titleLastName}>
+            +7 (123) 456-78-90
           </Typography>
         </Toolbar>
       </AppBar>
